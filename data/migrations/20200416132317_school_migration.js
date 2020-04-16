@@ -74,5 +74,11 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-  
+    return knex.schema
+        .dropTableIfExists('student_cohorts')
+        .dropTableIfExists('cohorts')
+        .dropTableIfExists('students')
+        .dropTableIfExists('sprints')
+        .dropTableIfExists('units')
+        .dropTableIfExists('tracks')
 };
