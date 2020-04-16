@@ -42,4 +42,15 @@ Users had a map with markers. Kept record of user information.
 - every table must have a primary key
 - work on two or three entities
 - one to many relationships requires a foreign key
+- the foreign key goes on the many side 
+- on a many to many, use a third table
+- the third table can have other information
 
+## School Model
+
+- keep a record of tracks ( ds, ios, android, web, db )
+- keep a record of `units`. A track is made of multiple units
+- a unit is made of `sprints`.
+- the school has students
+- the students are grouped into cohorts
+- a student could be part of more than one cohort
